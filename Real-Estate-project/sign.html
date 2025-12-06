@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In - DreamHouse</title>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #cfe8ff, #81b3ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    .signin-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      width: 300px;
+      text-align: center;
+      border-top: 5px solid #1e73ff;
+    }
+
+    .signin-container h2 {
+      margin-bottom: 20px;
+      color: #1e73ff;
+    }
+
+    .signin-container label {
+      font-weight: bold;
+      color: #333;
+      display: block;
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    .signin-container input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #a6c8ff;
+      background-color: #f2f7ff;
+    }
+
+    .signin-container button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #1e73ff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .signin-container button:hover {
+      background-color: #155bcc;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 30px;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signin-container">
+    <h2>Sign In</h2>
+    <form action="welcome.html" method="get">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
+
+  <footer>
+    Created by <b>Prachi Sekera</b>
+  </footer>
+
+</body>
+</html>

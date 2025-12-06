@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Trends</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e8f1ff; /* light blue background */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #1f4fb2; /* strong blue */
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1f4fb2;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #444;
+            line-height: 1.5;
+        }
+
+        .trend-box {
+            background: #d9e7ff;
+            padding: 15px;
+            border-left: 5px solid #3465d9;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        button {
+            background: #3465d9;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #244bb0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Price Trends
+    </header>
+
+    <div class="container">
+        <h2>Current Market Overview</h2>
+        <p>Here you can see simple price trend insights for rent and housing markets.</p>
+
+        <div class="trend-box">
+            <strong>▶ Trend 1:</strong> Rental prices have increased by 5% in the last 6 months.
+        </div>
+
+        <div class="trend-box">
+            <strong>▶ Trend 2:</strong> Average property selling price is stable this year.
+        </div>
+
+        <div class="trend-box">
+            <strong>▶ Trend 3:</strong> Demand for 2BHK apartments is rising.
+        </div>
+
+        <button id="infoBtn">More Info</button>
+    </div>
+
+    <script>
+        document.getElementById("infoBtn").onclick = function () {
+            alert("More detailed price trends coming soon!");
+        };
+    </script>
+
+</body>
+</html>

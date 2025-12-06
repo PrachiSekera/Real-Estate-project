@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Explore More</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f0ff; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #cce0ff; 
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 0 10px #99c2ff;
+        }
+
+        button {
+            background-color: #3399ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #007acc;
+        }
+
+        .error {
+            color: #ff3333; 
+            margin-top: 20px;
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Home Loans</h2>
+    <p>Click below to proceed</p>
+    <button id="homeLoanBtn">Check Eligibility</button>
+    <p class="error" id="errorMsg">Oops! This feature is not available yet.</p>
+</div>
+
+<script>
+    
+    const btn = document.getElementById("homeLoanBtn");
+    const error = document.getElementById("errorMsg");
+
+    btn.addEventListener("click", function() {
+        error.style.display = "block"; 
+    });
+</script>
+
+</body>
+</html>

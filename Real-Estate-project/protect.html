@@ -1,0 +1,84 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>Housing Protect 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff; /* light bluish background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #cce6ff; /* bluish container */
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0 0 10px #99ccff;
+        }
+
+        h2 {
+            color: #004080;
+        }
+
+        select, button {
+            margin-top: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #007acc;
+        }
+
+        button {
+            background-color: #3399ff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #007acc;
+        }
+
+        #output {
+            margin-top: 20px;
+            color: #003366; /* darker blue for message */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Housing Protect 2</h2>
+    <p>Select your coverage plan:</p>
+
+    <select id="coveragePlan">
+        <option value="Basic">Basic Plan</option>
+        <option value="Standard">Standard Plan</option>
+        <option value="Premium">Premium Plan</option>
+    </select>
+
+    <br>
+
+    <button onclick="confirmPlan()">Confirm Plan</button>
+
+    <p id="output">Your selected plan will appear here.</p>
+</div>
+
+<script>
+    function confirmPlan() {
+        // Get selected coverage plan
+        let plan = document.getElementById("coveragePlan").value;
+
+        // Update page message
+        document.getElementById("output").innerHTML =
+            "You selected: " + plan + " plan!";
+    }
+</script>
+
+</body>
+</html>

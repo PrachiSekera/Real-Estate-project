@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Housing Premium</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 300px;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      background: #0866ff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    p {
+      font-weight: bold;
+      margin-top: 15px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Housing Premium</h2>
+  <input type="number" id="price" placeholder="House Price">
+  <input type="number" id="percent" placeholder="Premium %">
+  <button onclick="document.getElementById('result').textContent='Premium: $'+((+price.value*+percent.value)/100)">Calculate</button>
+  <p id="result"></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Housing Premium</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff; /* light bluish background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #cce6ff; /* bluish container */
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 0 10px #99ccff;
+        }
+
+        button {
+            background-color: #3399ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #007acc;
+        }
+
+        p {
+            margin-top: 20px;
+            color: #004080;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Housing Premium</h2>
+    <p>Click below to calculate premium</p>
+    <button id="premiumBtn">Calculate Premium</button>
+    <p id="message">Check the console for output.</p>
+</div>
+
+<script>
+    // JS with console.log
+    const btn = document.getElementById("premiumBtn");
+
+    btn.addEventListener("click", function() {
+        console.log("Housing Premium calculation is coming soon!");
+        // Optional: update text on page too
+        document.getElementById("message").textContent = "Calculation feature will be available soon!";
+    });
+</script>
+
+</body>
+</html>
